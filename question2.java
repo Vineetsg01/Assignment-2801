@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class question2{  
-    public static int getSmallest(int[] nums, int size){  
+    public static int findMinimum(int[] nums, int size){  
     int temp;  
     for (int i = 0; i < size; i++)   
             {  
@@ -26,6 +26,6 @@ public class question2{
         for(int i=0;i<size;i++){
             nums[i] = sc.nextInt();
         }
-        System.out.println("Smallest: "+getSmallest(nums, size));  
+        System.out.println("Smallest: "+findMinimum(nums, size));  
     }
 }  
