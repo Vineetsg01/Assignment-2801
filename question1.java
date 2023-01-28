@@ -3,26 +3,26 @@ import java.util.Scanner;
 class question1
 {
     
-    public static void findPair(int[] nums, int n)
+    public static void findSum(int[] arr, int n)
     {
     
-        for (int i = 0; i < nums.length - 1; i++)
+        for (int i = 0; i < arr.length - 1; i++)
         {
             
-            for (int j = i + 1; j < nums.length; j++)
+            for (int j = i + 1; j < arr.length; j++)
             {
                 
-                if (nums[i] + nums[j] == n)
+                if (arr[i] + arr[j] == n)
                 {
-                    System.out.printf("(%d, %d)", nums[i], nums[j]);
+                    System.out.printf("(%d, %d)", arr[i], arr[j]);
                     return;
                 }
             }
         }
  
         
-        for(int i=0;i<nums.length;i++){
-            System.out.print(nums[i]+" ");
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
         }
     }
  
@@ -32,14 +32,14 @@ class question1
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of elements");
         size = sc.nextInt();
-        int[] nums = new int[size];
+        int[] arr = new int[size];
         System.out.println("Enter the elements of the array.");
         for(int i=0;i<size;i++){
-            nums[i] = sc.nextInt();
+            arr[i] = sc.nextInt();
         }
         System.out.println("Enter the targetted sum");
         int n = sc.nextInt();
  
-        findPair(nums, n);
+        findPair(arr, n);
     }
 }
